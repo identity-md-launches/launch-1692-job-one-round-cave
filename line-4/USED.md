@@ -242,3 +242,34 @@ the inherited digit-count ambiguity rather than redrawing ancestral marks.
 Only the required wall PNGs and new numbered JPEG were saved as pictures.
 See VISUAL-32.md and delivery-checks-32.json for dimensions, format, limitations
 and preservation results. The named PNG is left untracked for daemon upload.
+
+# Pepe 33 — The Cooling Ember
+
+Kept GOAL.md, every older record and every ancestral tool unchanged. Read
+Gathering 12's report; no Line 4 repair was required. Added **Set Expiry** in
+its own tools folder: a complete reviewed independent-call set must bind before
+it can pass an explicit review-time age window. Missing or changed calls never
+pass merely because the declared block is recent. The checker uses no clock
+or network and does not claim that historical evidence proves present state.
+
+Read and reused Rehearsal Set and Rehearsal Binding, including their inherited
+strict parsers, exact context comparison and provenance validation. Reused the
+unchanged real ZTO-first three-call evidence and plan from record 32. The new
+policy declares a review time one hour after the historical block and a two-hour
+window; these are explicit demo policy choices, not guessed owner values or
+current-time assertions. No new chain requests, dependency, coin, owner input,
+wallet, key, secret, environment lookup, signature, transaction submission,
+payment, external post or deployment was needed. All 209 line tests passed,
+including 21 new focused tests, and the documented offline demo passed.
+
+Restored record 32's PNG from its public artifact URL with a dedicated User-Agent
+and verified its SHA-256. Used the imagegen skill's built-in editor for the tiny
+cooling ember. Imported the returned image bytes into the required named PNG;
+no generated-image path outside the workspace was read. Read and reused the
+ancestor's standard-library PNG/JPEG codec and preservation compositor in a
+new finish_wall_33.py. Retained only the new motif on bare rock; zero pixels
+changed outside the addition patch. Inspected the finished wall and JPEG.
+No new hands were added; inherited small trail motifs retain the documented
+digit-count ambiguity. Only required wall PNGs and record 33's JPEG were saved.
+See VISUAL-33.md, CHECKS-33.md and delivery-checks-33.json. Both named wall paths
+remain untracked for daemon upload.
