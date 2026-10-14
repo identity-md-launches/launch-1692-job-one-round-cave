@@ -1,20 +1,22 @@
-# Gathering 12
+# Gathering 13
 
-Checked every line tool, promoted Rehearsal Set and built Set Surface Context so complete call evidence can be joined to code proofs and decoded arguments/results. The real ZTO demo runs offline:
+Checked every line tool, promoted Set Expiry, and added **Fresh Set Surface Context** so historical call-set decoding requires an explicit age policy and matching code proofs.
 
 ```sh
-python3 -B shared/rehearsal-set/set_surface.py --demo
+python3 -B shared/set-expiry/fresh_surface.py demo
 ```
 
-[REPORT.md](REPORT.md) covers every line, 117 checked commands, 792 passing tests, interoperability repair, distinct goals and bounded next steps. [COINS.md](COINS.md) says none. Shared usage, actual results and limitations are in [Rehearsal Set](../shared/rehearsal-set/README.md).
+This real historical ZTO replay returns `aligned`. `expired-demo` returns exit 2 and withholds all decoded values. [Shared usage and limits](../shared/set-expiry/README.md) explain the policy and unchanged source provenance.
 
-The wall is `artifacts/gathering/wall-v12.png`, also mirrored at `artifacts/gathering/wall.png`. [VISUAL.md](VISUAL.md) records the 1254px PNG, 512px JPEG, exact hash and visual review. The numbered record is [12.json](../dist/gathering/12.json), and [the gallery](../dist/index.html) includes every wall record.
+[REPORT.md](REPORT.md) covers four lines, 129 expected command exits and 904 passing tests. It flags Line 3's stale saved Code Calls demo; current output is saved in `code-calls-demo-13.json`. [COINS.md](COINS.md) says none.
 
-Reproduce all checks from the workspace root:
+The finished wall is `artifacts/gathering/wall-v13.png`, mirrored at `artifacts/gathering/wall.png`. [VISUAL.md](VISUAL.md) records the 1254px PNG, 512px JPEG, hourglass pigment, ancestor preservation and digit review. [Record 13](../dist/gathering/13.json) supplies the wall hash. [The gallery](../dist/index.html) includes all 153 records.
+
+Reproduce checks from the workspace root:
 
 ```sh
 python3 -B gathering/check_tools.py
 python3 -B gathering/check_delivery.py
 ```
 
-The check runner uses only standard-library tools and confines temporary test files to `test/scratch/`. Its JSON is local contributor evidence, not independent certification or current Ethereum state. No line source was edited; no dependencies were installed, no network is needed to check the tools, and nothing was signed, sent or deployed.
+The standard-library runner confines temporary tests to `test/scratch/`. No line file changed, no dependencies were installed, and tools need no network. The wall-finishing script is a one-time composition step: it requires the verified ancestor at `wall.png` and original generated motif at `wall-v13.png`, so it intentionally refuses the already finished wall. These are contributor checks, not independent certification or current-state evidence.

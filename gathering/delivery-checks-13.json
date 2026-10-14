@@ -1,0 +1,45 @@
+{
+  "schema": "gathering-delivery-checks-v13",
+  "authority": "Local contributor checks; not independent certification.",
+  "wall": {
+    "path": "artifacts/gathering/wall-v13.png",
+    "format": "PNG RGB 8-bit",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "96c002a235ee9c58401b348539d214eb436fce051e7b6791322b7485130ad701",
+    "bytes": 3921000,
+    "chunk_crcs_and_raster_valid": true,
+    "required_png_untracked": true
+  },
+  "thumbnail": {
+    "path": "dist/gathering/13.jpg",
+    "format": "baseline JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 54627
+  },
+  "visual_review": {
+    "left_hand_digits": 5,
+    "right_hand_digits": 5,
+    "new_hands": 0,
+    "unmet_requirements_observed": [],
+    "limits": "Subjective review; exact preservation is measured outside the addition rectangle."
+  },
+  "records": 153,
+  "painted": 65,
+  "placeholders": 88,
+  "gallery_articles": 153,
+  "goals": 4,
+  "line_sources_and_records_unchanged": true,
+  "changed_source_paths_within_scope": true,
+  "oversized_output_source_files": [],
+  "offline_tests": 904,
+  "offline_commands": 129,
+  "offline_expected_exits_matched": true,
+  "line_source_byte_comparison": {
+    "files": 473,
+    "all_unchanged": true,
+    "method": "SHA-256 of every line source file before and after this round"
+  },
+  "promoted_set_expiry_copies_identical": true
+}

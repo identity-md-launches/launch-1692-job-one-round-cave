@@ -1,0 +1,96 @@
+{
+  "schema": "fresh-set-surface-context-v1",
+  "verdict": "withheld",
+  "reason": "Expiry gate is expired; all decoded values withheld.",
+  "expiry": {
+    "schema": "rehearsal-set-expiry-v1",
+    "verdict": "expired",
+    "reason": "complete matching set is older than the declared age window",
+    "as_of": "0x6acee2f8",
+    "max_age_seconds": 7200,
+    "block_timestamp": "0x6acec6d7",
+    "age_seconds": 7201,
+    "expires_at": "0x6acee2f7",
+    "freshness": "expired",
+    "set_binding": {
+      "schema": "rehearsal-set-v1",
+      "verdict": "bound",
+      "reason": "every planned independent call matches at the exact reviewed block",
+      "chain_id": 1,
+      "block": {
+        "number": "0x18f9518",
+        "hash": "0xb6e55dcdf6ded6229f188d80f0b986222b198d104e09e9194bb8d97539355a06",
+        "timestamp": "0x6acec6d7"
+      },
+      "planned_count": 1,
+      "observed_count": 1,
+      "matched_count": 1,
+      "missing_ids": [],
+      "unexpected_ids": [],
+      "results": [
+        {
+          "id": "zto-manager-balance",
+          "binding": {
+            "schema": "rehearsal-binding-v1",
+            "verdict": "bound",
+            "reason": "explicit call, exact block and expected return bytes all match",
+            "plan": {
+              "schema": "rehearsal-binding-v1",
+              "chain_id": 1,
+              "call": {
+                "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+                "data": "0x70a08231000000000000000000000000000000000004444c5dc75cb358380d2e3de08a90",
+                "value": "0x0",
+                "from": "0x000000000004444c5dc75cb358380d2e3de08a90"
+              },
+              "block": {
+                "number": "0x18f9518",
+                "hash": "0xb6e55dcdf6ded6229f188d80f0b986222b198d104e09e9194bb8d97539355a06",
+                "timestamp": "0x6acec6d7"
+              },
+              "expected_return": "0x000000000000000000000000000000000000000000ec86113534ec8c808d5e6d"
+            },
+            "source": "https://ethereum-rpc.publicnode.com",
+            "observed_call": {
+              "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+              "data": "0x70a08231000000000000000000000000000000000004444c5dc75cb358380d2e3de08a90",
+              "value": "0x0",
+              "from": "0x000000000004444c5dc75cb358380d2e3de08a90"
+            },
+            "observed_block": {
+              "number": "0x18f9518",
+              "hash": "0xb6e55dcdf6ded6229f188d80f0b986222b198d104e09e9194bb8d97539355a06",
+              "timestamp": "0x6acec6d7"
+            },
+            "result": {
+              "status": "returned",
+              "raw": "0x000000000000000000000000000000000000000000ec86113534ec8c808d5e6d",
+              "uint256": "285939607966355541747129965"
+            },
+            "differences": [],
+            "plan_sha256": "ff74162d26d349c0009f40d0eabb03b5b0c0ae87cc534ee715c3a56d1af0fccc",
+            "evidence_sha256": "a40066b49b79db16fc673363ae009c5eb7ec418f135d1f606baeb1dac306849a",
+            "limits": "Bound means only that this explicit call and expected bytes match saved provider evidence at the exact reviewed historical block. It is not approval to transact. The sender may be a contract: this does not prove that anyone can originate the call. No nonce, gas, fees, access list, wallet wrapping, signatures, state effects, ABI meaning, balances, current state or future success are checked. Even a returned ABI false may be bound if those exact bytes were expected. Digests identify input content; they do not authenticate a provider or the chain. Nothing is sent."
+          }
+        }
+      ],
+      "plan_sha256": "f5380838731434c47b7f795efc481bd8a49fcb30d523ef2b158f2c6574736f42",
+      "evidence_sha256": "ae51e01faba3cbced963cc91fb506c48d071849170d6b3146d70a8177850d22d",
+      "limits": "Bound means complete matching historical provider evidence for independent calls at one exact block. Calls do not share simulated writes: this is not a sequence, multicall, atomic transaction, or state-effect simulation. Order has no execution meaning. Expected bytes are supplied by the reviewer; an expected ABI false can match. No ABI authentication, gas, fees, nonce, authority, current state or future success is established. Digests identify content, not authenticity. Nothing is sent."
+    },
+    "policy_sha256": "6488692160fb2f519ee63afd5a20484ac9aee3540176af4e129c768177426a5b",
+    "limits": "Fresh means only complete matching historical provider evidence inside the reviewer-declared age window. The review time is an input, not an independently verified clock. The window is a review policy, not a guarantee against state changes. No current state, future execution, gas, authority, ABI authenticity, provider identity or chain authenticity is established. Calls are independent and do not share simulated writes. No network request or transaction is made."
+  },
+  "surface_context": null,
+  "decoded_calls": null,
+  "input_sha256": {
+    "policy": "6488692160fb2f519ee63afd5a20484ac9aee3540176af4e129c768177426a5b",
+    "evidence": "ae51e01faba3cbced963cc91fb506c48d071849170d6b3146d70a8177850d22d",
+    "choices": "0700c3b545cc40e9b66bcf39c5b0d100107f68b7c671158ed5b4219bf6cfb002",
+    "proofs": {
+      "zto-manager-balance": "6d8cfd3b0ae6d13de4ca35d80a207b7cd973a47aed259960ba9bd1c4084f0c7c"
+    },
+    "anchor": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+  },
+  "limits": "The explicit review time and age window are reviewer inputs, not a trusted clock. Historical provider calls and supplied proof headers are not authenticated. All calls are independent; no shared writes, atomic sequence, current state, authority, gas, effects or future execution is established. Signatures and return types are reviewer choices. Stale or unbound sets skip code verification and release no decoded values. Nothing is sent."
+}

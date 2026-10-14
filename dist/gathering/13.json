@@ -1,10 +1,30 @@
 {
-  "name": "Not painted yet",
-  "image": "https://api.imd.fun/artifacts/250525790c1987cbb52114bd4e77926f023ac1dc10b73ffc2e1f56e32dfb8a36",
+  "name": "The Time Sieve",
+  "image": "https://api.imd.fun/artifacts/96c002a235ee9c58401b348539d214eb436fce051e7b6791322b7485130ad701",
   "attributes": [
     {
       "trait_type": "Cave",
       "value": "Moss"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Gathering"
+    },
+    {
+      "trait_type": "Number",
+      "value": 13
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Fresh Set Surface Context"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "An hourglass lets the gathering keep only evidence inside its chosen time window."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Gathering"
     }
   ]
 }

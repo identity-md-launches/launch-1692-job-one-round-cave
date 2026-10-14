@@ -1,0 +1,143 @@
+{
+  "demonstration_passed": true,
+  "results": [
+    {
+      "token": "ZTO",
+      "target": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+      "code_block": {
+        "number": "0x18f99b1",
+        "hash": "0x1dfd9e5522e0883294299de66aafcf57f28fa4f9a431b1858a728cae919e5b6e"
+      },
+      "state_inclusion_verified": true,
+      "anchor": "unanchored-rpc-header",
+      "call_instruction_count": 0,
+      "locally_constant_target_count": 0,
+      "unresolved_target_count": 0,
+      "calls": []
+    },
+    {
+      "token": "IMD",
+      "target": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+      "code_block": {
+        "number": "0x18f99b1",
+        "hash": "0x1dfd9e5522e0883294299de66aafcf57f28fa4f9a431b1858a728cae919e5b6e"
+      },
+      "state_inclusion_verified": true,
+      "anchor": "unanchored-rpc-header",
+      "call_instruction_count": 12,
+      "locally_constant_target_count": 1,
+      "unresolved_target_count": 11,
+      "calls": [
+        {
+          "pc": 2958,
+          "opcode": "STATICCALL",
+          "segment_start_pc": 2898,
+          "target_status": "unresolved",
+          "target_word": null,
+          "target_address": null,
+          "overlaps_recognized_metadata": false
+        },
+        {
+          "pc": 3066,
+          "opcode": "STATICCALL",
+          "segment_start_pc": 3009,
+          "target_status": "unresolved",
+          "target_word": null,
+          "target_address": null,
+          "overlaps_recognized_metadata": false
+        },
+        {
+          "pc": 6127,
+          "opcode": "CALL",
+          "segment_start_pc": 6124,
+          "target_status": "unresolved",
+          "target_word": null,
+          "target_address": null,
+          "overlaps_recognized_metadata": false
+        },
+        {
+          "pc": 6220,
+          "opcode": "STATICCALL",
+          "segment_start_pc": 6162,
+          "target_status": "unresolved",
+          "target_word": null,
+          "target_address": null,
+          "overlaps_recognized_metadata": false
+        },
+        {
+          "pc": 6497,
+          "opcode": "CALL",
+          "segment_start_pc": 6494,
+          "target_status": "unresolved",
+          "target_word": null,
+          "target_address": null,
+          "overlaps_recognized_metadata": false
+        },
+        {
+          "pc": 8175,
+          "opcode": "CALL",
+          "segment_start_pc": 8172,
+          "target_status": "unresolved",
+          "target_word": null,
+          "target_address": null,
+          "overlaps_recognized_metadata": false
+        },
+        {
+          "pc": 9260,
+          "opcode": "STATICCALL",
+          "segment_start_pc": 9248,
+          "target_status": "unresolved",
+          "target_word": null,
+          "target_address": null,
+          "overlaps_recognized_metadata": false
+        },
+        {
+          "pc": 9487,
+          "opcode": "STATICCALL",
+          "segment_start_pc": 9476,
+          "target_status": "unresolved",
+          "target_word": null,
+          "target_address": null,
+          "overlaps_recognized_metadata": false
+        },
+        {
+          "pc": 12315,
+          "opcode": "CALL",
+          "segment_start_pc": 12302,
+          "target_status": "unresolved",
+          "target_word": null,
+          "target_address": null,
+          "overlaps_recognized_metadata": false
+        },
+        {
+          "pc": 12834,
+          "opcode": "STATICCALL",
+          "segment_start_pc": 12743,
+          "target_status": "locally-constant",
+          "target_word": "0x0000000000000000000000001a44076050125825900e736c501f859c50fe728c",
+          "target_address": "0x1a44076050125825900e736c501f859c50fe728c",
+          "overlaps_recognized_metadata": false
+        },
+        {
+          "pc": 13214,
+          "opcode": "CALL",
+          "segment_start_pc": 13199,
+          "target_status": "unresolved",
+          "target_word": null,
+          "target_address": null,
+          "overlaps_recognized_metadata": false
+        },
+        {
+          "pc": 22977,
+          "opcode": "CALLCODE",
+          "segment_start_pc": 22976,
+          "target_status": "unresolved",
+          "target_word": null,
+          "target_address": null,
+          "overlaps_recognized_metadata": true
+        }
+      ]
+    }
+  ],
+  "scope": "Historical proof replay, not current code or verified external dependencies."
+}

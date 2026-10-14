@@ -20,7 +20,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 6 tests in 0.008s\nOK\n",
+      "stderr": "Ran 6 tests in 0.006s\nOK\n",
       "test_count": 6
     },
     {
@@ -40,7 +40,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 16 tests in 0.073s\nOK\n",
+      "stderr": "Ran 16 tests in 0.042s\nOK\n",
       "test_count": 16
     },
     {
@@ -60,7 +60,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 9 tests in 0.226s\nOK\n",
+      "stderr": "Ran 9 tests in 0.115s\nOK\n",
       "test_count": 9
     },
     {
@@ -80,8 +80,28 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 5 tests in 0.263s\nOK\n",
+      "stderr": "Ran 5 tests in 0.141s\nOK\n",
       "test_count": 5
+    },
+    {
+      "name": "line-1-zto-drift-suite",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-1/tools/zto-drift",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "passed": true,
+      "stderr": "Ran 17 tests in 0.104s\nOK\n",
+      "test_count": 17
     },
     {
       "name": "line-1-zto-handoff-suite",
@@ -100,8 +120,8 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 10 tests in 0.158s\nOK\n",
-      "test_count": 10
+      "stderr": "Ran 16 tests in 0.284s\nOK\n",
+      "test_count": 16
     },
     {
       "name": "line-1-zto-path-suite",
@@ -120,7 +140,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 17 tests in 0.174s\nOK\n",
+      "stderr": "Ran 17 tests in 0.103s\nOK\n",
       "test_count": 17
     },
     {
@@ -140,7 +160,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 10 tests in 2.771s\nOK\n",
+      "stderr": "Ran 10 tests in 2.445s\nOK\n",
       "test_count": 10
     },
     {
@@ -160,7 +180,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 15 tests in 0.117s\nOK\n",
+      "stderr": "Ran 15 tests in 0.068s\nOK\n",
       "test_count": 15
     },
     {
@@ -180,7 +200,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 12 tests in 0.109s\nOK\n",
+      "stderr": "Ran 12 tests in 0.063s\nOK\n",
       "test_count": 12
     },
     {
@@ -200,7 +220,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 12 tests in 0.471s\nOK\n",
+      "stderr": "Ran 12 tests in 0.346s\nOK\n",
       "test_count": 12
     },
     {
@@ -220,7 +240,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 29 tests in 0.765s\nOK\n",
+      "stderr": "Ran 29 tests in 0.633s\nOK\n",
       "test_count": 29
     },
     {
@@ -240,7 +260,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 22 tests in 0.069s\nOK\n",
+      "stderr": "Ran 22 tests in 0.046s\nOK\n",
       "test_count": 22
     },
     {
@@ -260,7 +280,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 24 tests in 0.086s\nOK\n",
+      "stderr": "Ran 24 tests in 0.063s\nOK\n",
       "test_count": 24
     },
     {
@@ -280,7 +300,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 3 tests in 0.006s\nOK\n",
+      "stderr": "Ran 3 tests in 0.008s\nOK\n",
       "test_count": 3
     },
     {
@@ -300,7 +320,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 15 tests in 0.347s\nOK\n",
+      "stderr": "Ran 15 tests in 0.147s\nOK\n",
       "test_count": 15
     },
     {
@@ -320,7 +340,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 7 tests in 0.073s\nOK\n",
+      "stderr": "Ran 7 tests in 0.030s\nOK\n",
       "test_count": 7
     },
     {
@@ -340,7 +360,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 11 tests in 0.083s\nOK\n",
+      "stderr": "Ran 11 tests in 0.033s\nOK\n",
       "test_count": 11
     },
     {
@@ -360,7 +380,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 4 tests in 0.015s\nOK\n",
+      "stderr": "Ran 4 tests in 0.007s\nOK\n",
       "test_count": 4
     },
     {
@@ -380,7 +400,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 4 tests in 0.012s\nOK\n",
+      "stderr": "Ran 4 tests in 0.005s\nOK\n",
       "test_count": 4
     },
     {
@@ -400,7 +420,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 20 tests in 0.055s\nOK\n",
+      "stderr": "Ran 20 tests in 0.026s\nOK\n",
       "test_count": 20
     },
     {
@@ -420,8 +440,28 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 13 tests in 0.282s\nOK\n",
+      "stderr": "Ran 13 tests in 0.153s\nOK\n",
       "test_count": 13
+    },
+    {
+      "name": "line-2-spender-exposure-suite",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-2/tools/spender-exposure",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "passed": true,
+      "stderr": "Ran 10 tests in 0.136s\nOK\n",
+      "test_count": 10
     },
     {
       "name": "line-3-code-ancestry-suite",
@@ -440,8 +480,28 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 23 tests in 4.615s\nOK\n",
+      "stderr": "Ran 23 tests in 1.450s\nOK\n",
       "test_count": 23
+    },
+    {
+      "name": "line-3-code-calls-suite",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-3/tools/code-calls",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "passed": true,
+      "stderr": "Ran 24 tests in 0.648s\nOK\n",
+      "test_count": 24
     },
     {
       "name": "line-3-code-changes-suite",
@@ -460,7 +520,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 10 tests in 0.061s\nOK\n",
+      "stderr": "Ran 10 tests in 0.034s\nOK\n",
       "test_count": 10
     },
     {
@@ -480,7 +540,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 16 tests in 1.094s\nOK\n",
+      "stderr": "Ran 16 tests in 0.489s\nOK\n",
       "test_count": 16
     },
     {
@@ -500,7 +560,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 21 tests in 3.246s\nOK\n",
+      "stderr": "Ran 21 tests in 1.263s\nOK\n",
       "test_count": 21
     },
     {
@@ -520,7 +580,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 16 tests in 0.185s\nOK\n",
+      "stderr": "Ran 16 tests in 0.103s\nOK\n",
       "test_count": 16
     },
     {
@@ -540,7 +600,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 23 tests in 2.429s\nOK\n",
+      "stderr": "Ran 23 tests in 1.435s\nOK\n",
       "test_count": 23
     },
     {
@@ -560,7 +620,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 6 tests in 0.123s\nOK\n",
+      "stderr": "Ran 6 tests in 0.072s\nOK\n",
       "test_count": 6
     },
     {
@@ -580,7 +640,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 30 tests in 1.142s\nOK\n",
+      "stderr": "Ran 30 tests in 0.654s\nOK\n",
       "test_count": 30
     },
     {
@@ -600,7 +660,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 19 tests in 1.547s\nOK\n",
+      "stderr": "Ran 19 tests in 0.843s\nOK\n",
       "test_count": 19
     },
     {
@@ -620,7 +680,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 25 tests in 1.202s\nOK\n",
+      "stderr": "Ran 25 tests in 0.568s\nOK\n",
       "test_count": 25
     },
     {
@@ -640,7 +700,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 17 tests in 4.461s\nOK\n",
+      "stderr": "Ran 17 tests in 1.976s\nOK\n",
       "test_count": 17
     },
     {
@@ -660,7 +720,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 25 tests in 1.841s\nOK\n",
+      "stderr": "Ran 25 tests in 0.771s\nOK\n",
       "test_count": 25
     },
     {
@@ -680,7 +740,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 36 tests in 0.055s\nOK\n",
+      "stderr": "Ran 36 tests in 0.038s\nOK\n",
       "test_count": 36
     },
     {
@@ -700,7 +760,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 23 tests in 0.029s\nOK\n",
+      "stderr": "Ran 23 tests in 0.020s\nOK\n",
       "test_count": 23
     },
     {
@@ -720,7 +780,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 20 tests in 0.164s\nOK\n",
+      "stderr": "Ran 20 tests in 0.106s\nOK\n",
       "test_count": 20
     },
     {
@@ -760,7 +820,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 7 tests in 0.099s\nOK\n",
+      "stderr": "Ran 7 tests in 0.074s\nOK\n",
       "test_count": 7
     },
     {
@@ -780,7 +840,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 20 tests in 0.019s\nOK\n",
+      "stderr": "Ran 20 tests in 0.013s\nOK\n",
       "test_count": 20
     },
     {
@@ -800,7 +860,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 6 tests in 0.009s\nOK\n",
+      "stderr": "Ran 6 tests in 0.006s\nOK\n",
       "test_count": 6
     },
     {
@@ -820,7 +880,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 27 tests in 0.039s\nOK\n",
+      "stderr": "Ran 27 tests in 0.024s\nOK\n",
       "test_count": 27
     },
     {
@@ -840,7 +900,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 10 tests in 0.149s\nOK\n",
+      "stderr": "Ran 10 tests in 0.084s\nOK\n",
       "test_count": 10
     },
     {
@@ -860,7 +920,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 12 tests in 0.008s\nOK\n",
+      "stderr": "Ran 12 tests in 0.006s\nOK\n",
       "test_count": 12
     },
     {
@@ -880,8 +940,211 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 19 tests in 0.021s\nOK\n",
+      "stderr": "Ran 19 tests in 0.014s\nOK\n",
       "test_count": 19
+    },
+    {
+      "name": "line-4-set-expiry-suite",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-4/tools/set-expiry",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "passed": true,
+      "stderr": "Ran 21 tests in 0.027s\nOK\n",
+      "test_count": 21
+    },
+    {
+      "name": "fresh-set-surface-demo",
+      "command": [
+        "python3",
+        "-B",
+        "shared/set-expiry/fresh_surface.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "passed": true,
+      "stderr": "",
+      "stdout_sha256": "999d9582801885156596c7f9368679c395bdec4e7d2366e1e043affb69346464",
+      "summary": {
+        "schema": "fresh-set-surface-context-v1",
+        "verdict": "aligned",
+        "limits": "The explicit review time and age window are reviewer inputs, not a trusted clock. Historical provider calls and supplied proof headers are not authenticated. All calls are independent; no shared writes, atomic sequence, current state, authority, gas, effects or future execution is established. Signatures and return types are reviewer choices. Stale or unbound sets skip code verification and release no decoded values. Nothing is sent."
+      }
+    },
+    {
+      "name": "fresh-set-surface-expired-demo",
+      "command": [
+        "python3",
+        "-B",
+        "shared/set-expiry/fresh_surface.py",
+        "expired-demo"
+      ],
+      "expected_exit": 2,
+      "exit": 2,
+      "passed": true,
+      "stderr": "",
+      "stdout_sha256": "879a4ce044d4a8b92dd46dab8ba708cc170a2d12f44d6167febe635cfb7f1a60",
+      "summary": {
+        "schema": "fresh-set-surface-context-v1",
+        "verdict": "withheld",
+        "limits": "The explicit review time and age window are reviewer inputs, not a trusted clock. Historical provider calls and supplied proof headers are not authenticated. All calls are independent; no shared writes, atomic sequence, current state, authority, gas, effects or future execution is established. Signatures and return types are reviewer choices. Stale or unbound sets skip code verification and release no decoded values. Nothing is sent."
+      }
+    },
+    {
+      "name": "shared-set-expiry-demo",
+      "command": [
+        "python3",
+        "-B",
+        "shared/set-expiry/set_expiry.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "passed": true,
+      "stderr": "",
+      "stdout_sha256": "da3cbd12d61d8b286e9a0f4bca5f01bc60da6a88c815616b1fdff93013847153",
+      "summary": {
+        "schema": "rehearsal-set-expiry-v1",
+        "verdict": "fresh",
+        "limits": "Fresh means only complete matching historical provider evidence inside the reviewer-declared age window. The review time is an input, not an independently verified clock. The window is a review policy, not a guarantee against state changes. No current state, future execution, gas, authority, ABI authenticity, provider identity or chain authenticity is established. Calls are independent and do not share simulated writes. No network request or transaction is made."
+      }
+    },
+    {
+      "name": "zto-drift-demo",
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/zto-drift/zto_drift.py",
+        "--demo"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "passed": true,
+      "stderr": "",
+      "stdout_sha256": "c29927b47e1b2ea5db20885ce263fcf454d7a5ee89e66e4cf435dbfe66d143b2",
+      "summary": {
+        "schema": "zto-drift-report-v1",
+        "status": "compared"
+      }
+    },
+    {
+      "name": "spender-exposure-demo",
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/spender-exposure/spender_exposure.py"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "passed": true,
+      "stderr": "",
+      "stdout_sha256": "8c4438334972ae18b5b70d828ae1a79aa8fbdab3768cd9e94599f7976bdb0c57",
+      "summary": {
+        "schema": "permission-spender-exposure-v1",
+        "measured_pair_count": 19,
+        "block": {
+          "block_number": 26187572,
+          "block_hash": "0xfbdf6fb511bd7ee2e74dd1b2bd8982e05e2d4cf8d10e495e6b9789bc50e7997f",
+          "block_time_utc": "2026-10-14T01:52:23+00:00",
+          "sources": [
+            "https://ethereum-rpc.publicnode.com"
+          ]
+        }
+      }
+    },
+    {
+      "name": "code-calls-demo",
+      "command": [
+        "python3",
+        "-B",
+        "line-3/tools/code-calls/demo.py"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "passed": true,
+      "stderr": "",
+      "stdout_sha256": "4871fd8435e29abcacf65ad4aafd8b757ea86f0b0c3df7c6756e46fcfb0877ad",
+      "summary": {
+        "demonstration_passed": true
+      }
+    },
+    {
+      "name": "set-expiry-demo",
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/set-expiry/set_expiry.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "passed": true,
+      "stderr": "",
+      "stdout_sha256": "da3cbd12d61d8b286e9a0f4bca5f01bc60da6a88c815616b1fdff93013847153",
+      "summary": {
+        "schema": "rehearsal-set-expiry-v1",
+        "verdict": "fresh",
+        "limits": "Fresh means only complete matching historical provider evidence inside the reviewer-declared age window. The review time is an input, not an independently verified clock. The window is a review policy, not a guarantee against state changes. No current state, future execution, gas, authority, ABI authenticity, provider identity or chain authenticity is established. Calls are independent and do not share simulated writes. No network request or transaction is made."
+      }
+    },
+    {
+      "name": "shared-rehearsal-set-demo",
+      "command": [
+        "python3",
+        "-B",
+        "shared/rehearsal-set/rehearsal_set.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "passed": true,
+      "stderr": "",
+      "stdout_sha256": "f2140b473dc7f324ba400eea469c4867470f7a499ac94e8c8f62a367c3f4e289",
+      "summary": {
+        "schema": "rehearsal-set-v1",
+        "verdict": "bound",
+        "block": {
+          "number": "0x18f99d1",
+          "hash": "0x852faa144e36a78b7a34c551c500fec88381b52da60607cb0a6a413ce9aefef7",
+          "timestamp": "0x6aceffd7"
+        },
+        "limits": "Bound means complete matching historical provider evidence for independent calls at one exact block. Calls do not share simulated writes: this is not a sequence, multicall, atomic transaction, or state-effect simulation. Order has no execution meaning. Expected bytes are supplied by the reviewer; an expected ABI false can match. No ABI authentication, gas, fees, nonce, authority, current state or future success is established. Digests identify content, not authenticity. Nothing is sent."
+      }
+    },
+    {
+      "name": "set-surface-demo",
+      "command": [
+        "python3",
+        "-B",
+        "shared/rehearsal-set/set_surface.py",
+        "--demo"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "passed": true,
+      "stderr": "",
+      "stdout_sha256": "3d78f8f939ffda486f379a9782969776f7504b7a4f7a22443a6cdadea0f16970",
+      "summary": {
+        "schema": "set-surface-context-v1",
+        "verdict": "aligned",
+        "block": {
+          "number": "0x18f9518",
+          "hash": "0xb6e55dcdf6ded6229f188d80f0b986222b198d104e09e9194bb8d97539355a06",
+          "timestamp": "0x6acec6d7"
+        },
+        "limits": "Independent historical calls, not a stateful sequence or multicall. Signatures and return layouts are reviewer choices, not authenticated ABI. Selector patterns do not establish reachability or behavior. Code inclusion is relative to supplied headers; call returns remain unproven RPC claims. An anchor hash is an equality check, not authentication. No current-state, authority, gas, effects, safety, or future-execution guarantee. Nothing is sent."
+      }
     },
     {
       "name": "zto-bundle-demo",
@@ -968,7 +1231,9 @@
       "passed": true,
       "stderr": "",
       "stdout_sha256": "115e4123af0667b6b79c3fed0119a0bfb1a465ef6b08f4d2c07dbd33b0db1645",
-      "summary": {}
+      "summary": {
+        "demonstration_passed": true
+      }
     },
     {
       "name": "code-routes-demo",
@@ -982,7 +1247,9 @@
       "passed": true,
       "stderr": "",
       "stdout_sha256": "83bc5c5f7037f13eeceaf228881865cc60b2b77867c25b8a4471620675e6bc90",
-      "summary": {}
+      "summary": {
+        "demonstration_passed": true
+      }
     },
     {
       "name": "rehearsal-binding-demo",
@@ -1075,7 +1342,9 @@
       "passed": true,
       "stderr": "",
       "stdout_sha256": "b9e2b2090cfc62df1f54a3a199682f5c016f190095f188e32f46000181593d61",
-      "summary": {}
+      "summary": {
+        "demonstration_passed": true
+      }
     },
     {
       "name": "calldata-lens-demo",
@@ -1202,7 +1471,9 @@
       "passed": true,
       "stderr": "",
       "stdout_sha256": "f65af8f7a171ee94be0097fd683da312747d5deaba785fe192e2a5c3e235062d",
-      "summary": {}
+      "summary": {
+        "demonstration_passed": true
+      }
     },
     {
       "name": "code-delta-demo",
@@ -1216,7 +1487,9 @@
       "passed": true,
       "stderr": "",
       "stdout_sha256": "7cd7a004e011b001cb7c9b2696c6e68f0d8db2b5399211171bcdda37b5c033fa",
-      "summary": {}
+      "summary": {
+        "demonstration_passed": true
+      }
     },
     {
       "name": "draft-bundle-demo",
@@ -1344,7 +1617,7 @@
       "exit": 0,
       "passed": true,
       "stderr": "",
-      "stdout_sha256": "71013790cfad9990a298c0c71a4ebcdab9ba7d37e0db8b52d338f64daab2d0e5",
+      "stdout_sha256": "f962762040f37ff879f803d47884d6436da19016dbbd72f4bf0bed24ca4d9951",
       "summary": {
         "schema": "zto-refresh-report-v1",
         "block": {
@@ -1425,7 +1698,9 @@
       "passed": true,
       "stderr": "",
       "stdout_sha256": "783fb164f4252478e8ea5a1dfee2700517e4e04ccee84984963db676dbd66d67",
-      "summary": {}
+      "summary": {
+        "demonstration_passed": true
+      }
     },
     {
       "name": "code-set-demo",
@@ -1439,7 +1714,9 @@
       "passed": true,
       "stderr": "",
       "stdout_sha256": "1dfdffb38949498465faf1f779e947372dff325c396b6b7644dae35768f1946b",
-      "summary": {}
+      "summary": {
+        "demonstration_passed": true
+      }
     },
     {
       "name": "relay-rehearsal-demo",
@@ -2109,7 +2386,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 14 tests in 0.493s\nOK\n",
+      "stderr": "Ran 14 tests in 0.143s\nOK\n",
       "test_count": 14
     },
     {
@@ -2131,6 +2408,26 @@
       "passed": true,
       "stderr": "Ran 1 test in 0.002s\nOK\n",
       "test_count": 1
+    },
+    {
+      "name": "rehearsal-set-suite",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "shared/rehearsal-set",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "passed": true,
+      "stderr": "Ran 41 tests in 0.278s\nOK\n",
+      "test_count": 41
     },
     {
       "name": "review-rehearsal-context-suite",
@@ -2169,8 +2466,28 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 12 tests in 0.032s\nOK\n",
+      "stderr": "Ran 12 tests in 0.019s\nOK\n",
       "test_count": 12
+    },
+    {
+      "name": "set-expiry-suite",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "shared/set-expiry",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "passed": true,
+      "stderr": "Ran 34 tests in 0.254s\nOK\n",
+      "test_count": 34
     },
     {
       "name": "surface-return-suite",
@@ -2189,7 +2506,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 23 tests in 1.513s\nOK\n",
+      "stderr": "Ran 23 tests in 0.811s\nOK\n",
       "test_count": 23
     },
     {
@@ -2209,7 +2526,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 3 tests in 0.238s\nOK\n",
+      "stderr": "Ran 3 tests in 0.122s\nOK\n",
       "test_count": 3
     },
     {
@@ -2229,7 +2546,7 @@
       "expected_exit": 0,
       "exit": 0,
       "passed": true,
-      "stderr": "Ran 11 tests in 0.202s\nOK\n",
+      "stderr": "Ran 11 tests in 0.114s\nOK\n",
       "test_count": 11
     },
     {
@@ -2329,76 +2646,6 @@
         "schema": "swap-code-context-v1",
         "decision": "refuse",
         "limits": "Caller must independently select and trust the swap policy, code reviews, manifest, reference height and code-block anchor. Matching historical evidence is no execution, token-behavior, settlement, provider-authenticity or future-liquidity guarantee. No wallet, key or transaction is used."
-      }
-    },
-    {
-      "name": "rehearsal-set-suite",
-      "command": [
-        "python3",
-        "-B",
-        "-m",
-        "unittest",
-        "discover",
-        "-s",
-        "shared/rehearsal-set",
-        "-p",
-        "test_*.py",
-        "-v"
-      ],
-      "expected_exit": 0,
-      "exit": 0,
-      "passed": true,
-      "stderr": "Ran 41 tests in 0.599s\nOK\n",
-      "test_count": 41
-    },
-    {
-      "name": "shared-rehearsal-set-demo",
-      "command": [
-        "python3",
-        "-B",
-        "shared/rehearsal-set/rehearsal_set.py",
-        "demo"
-      ],
-      "expected_exit": 0,
-      "exit": 0,
-      "passed": true,
-      "stderr": "",
-      "stdout_sha256": "f2140b473dc7f324ba400eea469c4867470f7a499ac94e8c8f62a367c3f4e289",
-      "summary": {
-        "schema": "rehearsal-set-v1",
-        "verdict": "bound",
-        "planned_count": 3,
-        "matched_count": 3,
-        "block": {
-          "number": "0x18f99d1",
-          "hash": "0x852faa144e36a78b7a34c551c500fec88381b52da60607cb0a6a413ce9aefef7",
-          "timestamp": "0x6aceffd7"
-        }
-      }
-    },
-    {
-      "name": "set-surface-demo",
-      "command": [
-        "python3",
-        "-B",
-        "shared/rehearsal-set/set_surface.py",
-        "--demo"
-      ],
-      "expected_exit": 0,
-      "exit": 0,
-      "passed": true,
-      "stderr": "",
-      "stdout_sha256": "3d78f8f939ffda486f379a9782969776f7504b7a4f7a22443a6cdadea0f16970",
-      "summary": {
-        "schema": "set-surface-context-v1",
-        "verdict": "aligned",
-        "planned_count": 1,
-        "matched_count": 1,
-        "block": {
-          "number": "0x18f9518",
-          "hash": "0xb6e55dcdf6ded6229f188d80f0b986222b198d104e09e9194bb8d97539355a06",
-          "timestamp": "0x6acec6d7"
-        }
       }
     }
   ]

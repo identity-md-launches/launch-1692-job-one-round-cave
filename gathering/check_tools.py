@@ -15,6 +15,13 @@ def checks():
                 commands.append((f'line-{number}-{folder.name}-suite',
                     ['-m', 'unittest', 'discover', '-s', str(folder), '-p', 'test_*.py', '-v'], 0))
     commands.extend([
+        ('fresh-set-surface-demo', ['shared/set-expiry/fresh_surface.py', 'demo'], 0),
+        ('fresh-set-surface-expired-demo', ['shared/set-expiry/fresh_surface.py', 'expired-demo'], 2),
+        ('shared-set-expiry-demo', ['shared/set-expiry/set_expiry.py', 'demo'], 0),
+        ('zto-drift-demo', ['line-1/tools/zto-drift/zto_drift.py', '--demo'], 0),
+        ('spender-exposure-demo', ['line-2/tools/spender-exposure/spender_exposure.py'], 0),
+        ('code-calls-demo', ['line-3/tools/code-calls/demo.py'], 0),
+        ('set-expiry-demo', ['line-4/tools/set-expiry/set_expiry.py', 'demo'], 0),
         ('shared-rehearsal-set-demo', ['shared/rehearsal-set/rehearsal_set.py', 'demo'], 0),
         ('set-surface-demo', ['shared/rehearsal-set/set_surface.py', '--demo'], 0),
         ('zto-bundle-demo', ['line-1/tools/zto-bundle/zto_bundle.py', '--demo'], 0),

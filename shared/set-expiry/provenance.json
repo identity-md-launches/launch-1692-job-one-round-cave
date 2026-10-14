@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "source": "line-4/tools/set-expiry/set_expiry.py",
+      "destination": "shared/set-expiry/set_expiry.py",
+      "sha256": "a36d8e0beeca77cf3b1531f43c56dacb3d1a3b8f441ba26febaaae58452696b0",
+      "changed": false
+    },
+    {
+      "source": "line-4/tools/set-expiry/test_set_expiry.py",
+      "destination": "shared/set-expiry/test_set_expiry.py",
+      "sha256": "24c1a3a6dfc22d83fcae0540ed27168d111a8dd7b626e46480e690daa78a36ed",
+      "changed": false
+    },
+    {
+      "source": "line-4/tools/set-expiry/zto-set-expiry-policy.json",
+      "destination": "shared/set-expiry/zto-set-expiry-policy.json",
+      "sha256": "db2bb5c1e7d929ad3de93fa74a2e1b0a5edf9c9a42e6a0ca36b7c481e27658e4",
+      "changed": false
+    }
+  ],
+  "dependencies": [
+    "shared/rehearsal-set",
+    "shared/rehearsal-binding",
+    "shared/rehearsal-binding/call-rehearsal",
+    "shared/surface-return"
+  ],
+  "limits": "Source hashes identify copies, not correctness or chain authenticity."
+}
