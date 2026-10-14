@@ -16,6 +16,14 @@ canonical source digests, raw/display unit agreement, self-digest, and the
 absence of settlement data. It checks the handoff itself, not the original
 evidence; use the normal handoff command to re-review a snapshot/report/policy.
 
+The standalone verifier requires an integer Ethereum chain ID, a lowercase
+32-byte block hash, canonical uint64 block quantities, a positive timestamp,
+and a block number at or after pool initialization. Reference block and age
+must be uint64 integers;
+age must equal reference block minus the pinned block number. Input and minimum
+output must fit positive int128 pool deltas. Recomputing a file's self-digest
+does not bypass these checks or authenticate its source evidence.
+
 ## One command to see it working
 
 From the repository root, with Python 3.10+ and no installation or network:
@@ -77,10 +85,11 @@ handoff digest/unit/transaction tampering, and the no-network CLI path:
 python3 -B -m unittest discover -s line-1/tools/zto-handoff -p 'test_*.py' -v
 ```
 
-When tried this round, all ten focused tests passed. The committed
-`demo-handoff.json` passed both the self-contained and evidence-backed
-verifiers offline, and the new save command wrote the same self-digested
-review handoff that it printed.
+When tried this round, all 16 focused tests and all nine dependent bundle tests
+passed. Freshly re-digested invalid chain IDs, block encodings, review ages,
+integer widths, and pool amounts were rejected; valid width boundaries passed.
+The committed `demo-handoff.json` still passes both the self-contained and
+evidence-backed verifiers offline; its existing bytes and digest are unchanged.
 
 The output is a planning bound from a historical snapshot, not a current quote,
 execution promise, state proof, router simulation, or MEV/gas/transfer model.

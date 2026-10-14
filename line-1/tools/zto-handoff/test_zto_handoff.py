@@ -42,6 +42,90 @@ class HandoffTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'digest mismatch'):
             h.verify_handoff(changed)
 
+    def redigest(self, value):
+        value['handoff_sha256'] = h.review.digest(
+            {key: item for key, item in value.items() if key != 'handoff_sha256'})
+
+    def test_redigested_invalid_chain_ids_are_refused(self):
+        for chain_id in (True, 1.0, '1', 2):
+            with self.subTest(chain_id=chain_id):
+                changed = h.handoff(self.observation, self.report, self.policy, '100000000')
+                changed['chain_id'] = chain_id
+                self.redigest(changed)
+                with self.assertRaisesRegex(ValueError, 'assigned Ethereum'):
+                    h.verify_handoff(changed)
+
+    def test_redigested_invalid_block_encodings_and_widths_are_refused(self):
+        invalid = [
+            ('hash', '0x1'), ('hash', '0x' + 'a' * 63),
+            ('hash', '0x' + 'a' * 65), ('hash', '0x' + 'A' * 64),
+            ('hash', None), ('number', '0x018f8a44'), ('number', '0x18F8A44'),
+            ('number', '0x' + '1' * 17), ('number', '0x0'),
+            ('number', hex(h.review.sizes.path.z.INIT_BLOCK - 1)),
+            ('number', 26184260), ('timestamp', '0x00'), ('timestamp', '0x0'),
+            ('timestamp', '0x' + '1' * 17), ('timestamp', True),
+        ]
+        for key, value in invalid:
+            with self.subTest(key=key, value=value):
+                changed = copy.deepcopy(h.handoff(
+                    self.observation, self.report, self.policy, '100000000'))
+                changed['block'][key] = value
+                self.redigest(changed)
+                with self.assertRaisesRegex(ValueError, 'invalid pinned block'):
+                    h.verify_handoff(changed)
+
+    def test_redigested_inconsistent_age_is_refused(self):
+        original = h.handoff(self.observation, self.report, self.policy, '100000000')
+        number = int(original['block']['number'], 16)
+        for reference, age in ((1, 0), (number - 1, 0), (number, 1),
+                               (number + 10, 9), (number + 10, 11)):
+            with self.subTest(reference=reference, age=age):
+                changed = copy.deepcopy(original)
+                changed['review_reference_block'] = reference
+                changed['review_age_blocks'] = age
+                self.redigest(changed)
+                with self.assertRaisesRegex(ValueError, 'review age disagrees'):
+                    h.verify_handoff(changed)
+
+    def test_redigested_invalid_review_integer_ranges_are_refused(self):
+        for key in ('review_reference_block', 'review_age_blocks'):
+            for value in (True, -1, 1 << 64, 1.0, '1'):
+                with self.subTest(key=key, value=value):
+                    changed = h.handoff(self.observation, self.report, self.policy, '100000000')
+                    changed[key] = value
+                    self.redigest(changed)
+                    with self.assertRaisesRegex(ValueError, 'invalid review settings'):
+                        h.verify_handoff(changed)
+
+    def test_redigested_amounts_outside_pool_delta_are_refused(self):
+        for prefix in ('requested_input', 'minimum_output'):
+            for raw in (1 << 127, 1 << 128):
+                with self.subTest(prefix=prefix, raw=raw):
+                    changed = h.handoff(self.observation, self.report, self.policy, '100000000')
+                    changed[prefix + '_raw'] = str(raw)
+                    changed[prefix] = h.review.sizes.path.z.units(raw, 18)
+                    self.redigest(changed)
+                    with self.assertRaisesRegex(ValueError, 'positive int128 pool delta'):
+                        h.verify_handoff(changed)
+
+    def test_structural_verifier_accepts_valid_width_and_age_boundaries(self):
+        # This remains a structural check, not evidence authentication. These
+        # boundary edits are intentionally not submitted to verify_evidence.
+        changed = copy.deepcopy(h.handoff(
+            self.observation, self.report, self.policy, '100000000'))
+        changed['review_reference_block'] = (1 << 64) - 1
+        changed['review_age_blocks'] = ((1 << 64) - 1) - int(changed['block']['number'], 16)
+        changed['block']['timestamp'] = hex((1 << 64) - 1)
+        for prefix in ('requested_input', 'minimum_output'):
+            changed[prefix + '_raw'] = str((1 << 127) - 1)
+            changed[prefix] = h.review.sizes.path.z.units((1 << 127) - 1, 18)
+        self.redigest(changed)
+        self.assertEqual(h.verify_handoff(changed)['status'], 'accepted')
+        changed['block']['number'] = hex((1 << 64) - 1)
+        changed['review_age_blocks'] = 0
+        self.redigest(changed)
+        self.assertEqual(h.verify_handoff(changed)['status'], 'accepted')
+
     def test_unreviewed_or_partial_amount_refused(self):
         for amount in ('1000000000', '2'):
             with self.assertRaises(ValueError):

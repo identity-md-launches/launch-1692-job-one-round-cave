@@ -1,0 +1,137 @@
+{
+  "schema": "zto-drift-report-v1",
+  "status": "compared",
+  "chain_id": 1,
+  "pool_id": "0x888b07bd282f587d3c6b0fcb23e7fc55bbb33abe8910dd7492db815dc8dc5592",
+  "before": {
+    "snapshot_sha256": "3b86531e4460f2e694b7f824ed5027bf9230a331025d7cbddf0ef759ef560a30",
+    "block": {
+      "number": "0x18f8a44",
+      "hash": "0xcd8e7e4ba940af1feac8d6b441c37ef0230c4bcd2fd55d36376038a4b4c36650",
+      "timestamp": "0x6ace4457"
+    },
+    "block_number": 26184260,
+    "source": "https://ethereum-rpc.publicnode.com"
+  },
+  "after": {
+    "snapshot_sha256": "aeb35cd333536c9261c29f64d951bfd7f14e815cb49c9529a0296e259283aacf",
+    "block": {
+      "number": "0x18f927d",
+      "hash": "0x1346656496c6d10ba1577571efc9e86cc188d711bd987e60f5283e1dc37a73d2",
+      "timestamp": "0x6acea757"
+    },
+    "block_number": 26186365,
+    "source": "https://eth.drpc.org"
+  },
+  "block_gap": 2105,
+  "reference_block": 26186365,
+  "later_age_blocks": 0,
+  "max_age_blocks": 0,
+  "input_token": "ZTO",
+  "output_token": "IMD",
+  "amounts": [
+    "1",
+    "100000000",
+    "1000000000"
+  ],
+  "slippage_bps": 100,
+  "max_deterioration_bps": 100,
+  "reasons": [],
+  "candidates": [
+    {
+      "index": 0,
+      "amount": "1",
+      "requested_input_raw": "1000000000000000000",
+      "before_pool_status": "estimated",
+      "after_pool_status": "estimated",
+      "before_ticks_crossed": 0,
+      "after_ticks_crossed": 0,
+      "status": "covered_at_later_snapshot",
+      "reasons": [],
+      "before_output_raw": "15292155595473",
+      "after_output_raw": "22505016102922",
+      "before_output": "0.000015292155595473",
+      "after_output": "0.000022505016102922",
+      "output_change_raw": "7212860507449",
+      "original_minimum_output_raw": "15139234039518",
+      "original_minimum_output": "0.000015139234039518",
+      "deterioration_bps": {
+        "numerator": "-72128605074490000",
+        "denominator": "15292155595473",
+        "ceiling": -4716
+      },
+      "later_headroom_raw": "7365782063404",
+      "original_minimum_covered": true
+    },
+    {
+      "index": 1,
+      "amount": "100000000",
+      "requested_input_raw": "100000000000000000000000000",
+      "before_pool_status": "estimated",
+      "after_pool_status": "estimated",
+      "before_ticks_crossed": 0,
+      "after_ticks_crossed": 0,
+      "status": "covered_at_later_snapshot",
+      "reasons": [],
+      "before_output_raw": "1196130391948897309582",
+      "after_output_raw": "1682218759891661012097",
+      "before_output": "1196.130391948897309582",
+      "after_output": "1682.218759891661012097",
+      "output_change_raw": "486088367942763702515",
+      "original_minimum_output_raw": "1184169088029408336486",
+      "original_minimum_output": "1184.169088029408336486",
+      "deterioration_bps": {
+        "numerator": "-2430441839713818512575000",
+        "denominator": "598065195974448654791",
+        "ceiling": -4063
+      },
+      "later_headroom_raw": "498049671862252675611",
+      "original_minimum_covered": true
+    },
+    {
+      "index": 2,
+      "amount": "1000000000",
+      "requested_input_raw": "1000000000000000000000000000",
+      "before_pool_status": "outside_coverage",
+      "after_pool_status": "outside_coverage",
+      "before_ticks_crossed": 1,
+      "after_ticks_crossed": 0,
+      "status": "refuse",
+      "reasons": [
+        "before_incomplete",
+        "after_incomplete"
+      ]
+    }
+  ],
+  "covered_count": 2,
+  "carried_bounds": [
+    {
+      "candidate_index": 0,
+      "input_token": "ZTO",
+      "output_token": "IMD",
+      "requested_input_raw": "1000000000000000000",
+      "minimum_output_raw": "15139234039518",
+      "later_estimated_output_raw": "22505016102922"
+    },
+    {
+      "candidate_index": 1,
+      "input_token": "ZTO",
+      "output_token": "IMD",
+      "requested_input_raw": "100000000000000000000000000",
+      "minimum_output_raw": "1184169088029408336486",
+      "later_estimated_output_raw": "1682218759891661012097"
+    }
+  ],
+  "minimum_rule": "floor(before_output_raw * (10000 - slippage_bps) / 10000)",
+  "deterioration_rule": "(before_output_raw - after_output_raw) * 10000 / before_output_raw",
+  "limitations": [
+    "Both snapshots are historical RPC evidence, not state proofs or current quotes.",
+    "Strict block order does not prove chain ancestry, consensus or provider authenticity.",
+    "Reference height and tolerance are caller inputs; age is not a live freshness check.",
+    "Each amount is an independent quote; observations do not model intervening or successive trades.",
+    "Only the original minimum is carried; later output does not renew slippage tolerance.",
+    "Bounds are planning numbers, not receipt guarantees or executable transactions.",
+    "Reuses ZTO Sizes/Path arithmetic; no independent math, settlement, transfers, gas or MEV simulation."
+  ],
+  "mode": "historical_demo"
+}

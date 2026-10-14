@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "record_number": 33,
+  "record_shape": "exact requested keys and six attributes",
+  "goal_sha256_unchanged": "ef78b6868ed5e359415d94b483fda4d44a7ab649ed8e1f92984b4d54d077130a",
+  "older_record_and_jpeg_files_unchanged": 44,
+  "new_numbered_files": [
+    "dist/line-1/33.json",
+    "dist/line-1/33.jpg"
+  ],
+  "wall_sha256": "38844a51cc6e7b0f78ce89264c0b1d99587f75a73dbd011dd9c1349d3663d0bd",
+  "wall_pngs_identical": true,
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_bytes": 55679,
+  "required_pngs_untracked": true,
+  "all_changes_within_scope": true,
+  "new_picture_outside_artifacts": "Only explicitly required dist/line-1/33.jpg",
+  "all_changed_source_files_below_100000_bytes": true,
+  "changed_source_sizes": {
+    "dist/line-1/33.jpg": 55679,
+    "dist/line-1/33.json": 520,
+    "line-1/CHECKS-33.md": 2281,
+    "line-1/USED.md": 21640,
+    "line-1/VISUAL-33.md": 3524,
+    "line-1/baseline-33.json": 4418,
+    "line-1/check-results-33.json": 3968,
+    "line-1/tools/zto-drift/README.md": 7115,
+    "line-1/tools/zto-drift/demo-report.json": 4870,
+    "line-1/tools/zto-drift/test_zto_drift.py": 11089,
+    "line-1/tools/zto-drift/zto_drift.py": 11185,
+    "line-1/tools/zto-handoff/README.md": 4719,
+    "line-1/tools/zto-handoff/test_zto_handoff.py": 10773,
+    "line-1/tools/zto-handoff/zto_handoff.py": 14369,
+    "line-1/visual-checks-33.json": 1103
+  },
+  "diff_check": "passed",
+  "unmet_visual_requirements": [],
+  "checker_repair": "An initial delivery-check assertion mistakenly expected seven attributes; corrected to the six fields in the brief and all checks rerun successfully.",
+  "independent_certification": false
+}

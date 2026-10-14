@@ -89,7 +89,8 @@ def verify_handoff(value):
             'handoff must contain exactly the documented fields')
     require(value['schema'] == SCHEMA, 'wrong handoff schema')
     require(value['status'] == 'ready_for_human_review', 'handoff is not ready for review')
-    require(value['chain_id'] == 1 and value['pool_id'] == review.sizes.path.z.POOL,
+    require(type(value['chain_id']) is int and value['chain_id'] == 1 and
+            value['pool_id'] == review.sizes.path.z.POOL,
             'handoff is not for the assigned Ethereum ZTO/IMD pool')
     require(value['input_token'] in ('ZTO', 'IMD') and
             value['output_token'] in ('ZTO', 'IMD') and
@@ -97,25 +98,42 @@ def verify_handoff(value):
     require(value['mode'] in ('historical_demo', 'caller_policy', 'library'), 'invalid mode')
     require(value['settlement'] == 'unspecified' and value['transaction'] is None,
             'handoff must not contain settlement or transaction data')
-    require(type(value['block']) is dict and set(value['block']) == {'number', 'hash', 'timestamp'} and
-            all(isinstance(value['block'][key], str) and re.fullmatch(r'0x[0-9a-f]+', value['block'][key])
-                for key in value['block']), 'invalid pinned block')
+    block = value['block']
+    require(type(block) is dict and set(block) == {'number', 'hash', 'timestamp'},
+            'invalid pinned block')
+    require(type(block['hash']) is str and re.fullmatch(r'0x[0-9a-f]{64}', block['hash']),
+            'invalid pinned block hash')
+    # RPC quantities use no leading zeroes; the review policy uses uint64s.
+    require(all(type(block[key]) is str and
+                re.fullmatch(r'0x(?:0|[1-9a-f][0-9a-f]{0,15})', block[key])
+                for key in ('number', 'timestamp')), 'invalid pinned block quantities')
+    number = int(block['number'], 16)
+    require(number >= review.sizes.path.z.INIT_BLOCK and int(block['timestamp'], 16) > 0,
+            'invalid pinned block range')
     require(type(value['source_digests']) is dict and
             set(value['source_digests']) == {'snapshot_sha256', 'policy_sha256', 'report_sha256'} and
             all(isinstance(digest, str) and re.fullmatch(r'[0-9a-f]{64}', digest)
                 for digest in value['source_digests'].values()), 'invalid source digests')
     require(type(value['slippage_bps']) is int and 0 <= value['slippage_bps'] < 10000 and
-            all(type(value[key]) is int and value[key] >= 0
+            all(type(value[key]) is int and 0 <= value[key] < 1 << 64
                 for key in ('review_reference_block', 'review_age_blocks')), 'invalid review settings')
+    require(value['review_reference_block'] >= number and
+            value['review_age_blocks'] == value['review_reference_block'] - number,
+            'review age disagrees with pinned block and reference')
     require(type(value['limitations']) is list and len(value['limitations']) >= 1 and
             all(isinstance(item, str) and item for item in value['limitations']), 'invalid limitations')
     decimals = 18  # Both assigned ERC-20s are 18-decimal in the pinned pool evidence.
+    require(all(type(value[key]) is str and len(value[key]) <= 120
+                for key in ('requested_input', 'minimum_output')),
+            'amount displays must be short decimal strings')
     requested = review.sizes.path.z.parse_amount(value['requested_input'], decimals)
     minimum = review.sizes.path.z.parse_amount(value['minimum_output'], decimals)
     require(value['requested_input_raw'] == str(requested) and requested > 0,
             'requested input display disagrees with raw units')
     require(value['minimum_output_raw'] == str(minimum) and minimum > 0,
             'minimum output display disagrees with raw units')
+    require(requested < 1 << 127, 'input must fit positive int128 pool delta')
+    require(minimum < 1 << 127, 'minimum output must fit positive int128 pool delta')
     require(isinstance(value['handoff_sha256'], str) and re.fullmatch(r'[0-9a-f]{64}', value['handoff_sha256']),
             'invalid handoff digest')
     unsigned = {key: item for key, item in value.items() if key != 'handoff_sha256'}

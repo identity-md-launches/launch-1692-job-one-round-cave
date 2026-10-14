@@ -1,0 +1,146 @@
+{
+  "profile": "none; contributor-run targeted offline checks",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-1/tools/zto-drift",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "1550f7d89b7e907c3984896fae4dafc8b04f3dddd633943689b1d31e3ecfc196",
+      "tests_passed": 17
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-1/tools/zto-handoff",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "7b339379e6f08ecdc577b304c37998d4eb44d0ca2b6031597ac522ceca1e1239",
+      "tests_passed": 16
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-1/tools/zto-bundle",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "a97315632cb637f8ffd11977de87250a77aeffbaf920eda79d75e8d368ea50f3",
+      "tests_passed": 9
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/zto-drift/zto_drift.py",
+        "--demo"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "stdout_sha256": "c29927b47e1b2ea5db20885ce263fcf454d7a5ee89e66e4cf435dbfe66d143b2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "compared",
+      "covered_count": 2
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/zto-drift/zto_drift.py",
+        "--before",
+        "line-1/tools/zto-path/observation.json",
+        "--after",
+        "line-1/tools/zto-refresh/live-observation.json",
+        "--input",
+        "IMD",
+        "--amount",
+        "1",
+        "--slippage-bps",
+        "100",
+        "--max-deterioration-bps",
+        "100",
+        "--reference-block",
+        "26186365",
+        "--max-age-blocks",
+        "0"
+      ],
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "stdout_sha256": "18dc29c1f8df28ac31d41e70b09745b27274d96fa3937f25d589cfb85d41427a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "refuse",
+      "covered_count": 0,
+      "reasons": [
+        "original_minimum_breached",
+        "deterioration_limit_exceeded"
+      ]
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/zto-handoff/zto_handoff.py",
+        "--demo",
+        "--verify-evidence",
+        "line-1/tools/zto-handoff/demo-handoff.json"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "stdout_sha256": "756e6c143e37157764efe7145cdbf4986334fd90cbb40e0e5a73f71afea70fe1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/zto-bundle/zto_bundle.py",
+        "--demo"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "stdout_sha256": "14f524a5b7b1b5e650b6f7b992257620a742eab30cd2af547b9561524c19500f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "total_tests_passed": 42,
+  "all_expected_exits": true,
+  "network_for_tool_checks": false,
+  "independent_certification": false
+}

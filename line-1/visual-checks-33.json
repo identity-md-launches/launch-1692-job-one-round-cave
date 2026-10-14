@@ -1,0 +1,39 @@
+{
+  "ancestor_sha256": "ffb3a8b9acfea3c8a7cb848c64e2f2be51d938050e807f0844ff5332d95cc698",
+  "wall_sha256": "38844a51cc6e7b0f78ce89264c0b1d99587f75a73dbd011dd9c1349d3663d0bd",
+  "wall": {
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "bytes": 2730651
+  },
+  "addition_box": [
+    178,
+    326,
+    348,
+    374
+  ],
+  "changed_pixel_bounds": [
+    178,
+    328,
+    347,
+    374
+  ],
+  "changed_pixels_inside": 4896,
+  "changed_pixels_outside": 0,
+  "jpeg": {
+    "path": "dist/line-1/33.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 55679
+  },
+  "method": "Imagegen created transparent charcoal/ochre/chalk pigment; FFmpeg scaled and composited only the new motif on the recovered wall in RGB.",
+  "hand_review": "Both inherited visible hands have five digits; no hands or handprints added.",
+  "unmet_visual_requirements": [],
+  "visual_limitations": [
+    "Small pebbles are less distinct at thumbnail scale.",
+    "Pixel preservation is measured; aesthetic review is contributor observation, not independent certification."
+  ]
+}
