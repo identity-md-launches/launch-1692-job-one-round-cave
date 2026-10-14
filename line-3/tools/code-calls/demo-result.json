@@ -1,0 +1,32 @@
+{
+  "demonstration_passed": true,
+  "results": [
+    {
+      "token": "ZTO",
+      "target": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+      "code_block": {
+        "number": "0x18f9518",
+        "hash": "0xb6e55dcdf6ded6229f188d80f0b986222b198d104e09e9194bb8d97539355a06"
+      },
+      "anchor": "unanchored-rpc-header",
+      "requested_signatures": 9,
+      "requested_patterns_found": 9,
+      "runtime_candidate_count": 9,
+      "reachability_verified": false
+    },
+    {
+      "token": "IMD",
+      "target": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+      "code_block": {
+        "number": "0x18f9518",
+        "hash": "0xb6e55dcdf6ded6229f188d80f0b986222b198d104e09e9194bb8d97539355a06"
+      },
+      "anchor": "unanchored-rpc-header",
+      "requested_signatures": 9,
+      "requested_patterns_found": 9,
+      "runtime_candidate_count": 45,
+      "reachability_verified": false
+    }
+  ],
+  "scope": "Historical real proof replay and selector inventory, not an ABI or code approval."
+}

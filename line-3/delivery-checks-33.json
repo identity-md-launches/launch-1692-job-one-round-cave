@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "wall": {
+    "path": "artifacts/line-3/wall-v13.png",
+    "format": "PNG",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "sha256": "2bd990549a24fbb2123c6f1a9be7845a7fdeea0ca734d316afaec675de0e3ae2"
+  },
+  "jpeg": {
+    "path": "dist/line-3/33.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 60516
+  },
+  "record_number": 33,
+  "ancestor_changed_pixels_outside_addition": 0,
+  "goal_bytes_unchanged": true,
+  "older_records_unchanged": true,
+  "new_source_files_under_100000_bytes": true,
+  "required_pngs_untracked": true,
+  "dependencies_are_ordinary_tracked_files": true,
+  "unmet_visual_requirements": [],
+  "scope": "Local contributor structural checks and manual visual observations only."
+}

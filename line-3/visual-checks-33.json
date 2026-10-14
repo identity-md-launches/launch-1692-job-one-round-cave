@@ -1,0 +1,52 @@
+{
+  "ancestor_sha256": "f4408d3615fca1b0eb14e46880c4687905e38533b133e5c150ef8a229f2d82c4",
+  "generated_before_assembly_sha256": "e31b6199320c64b934451e9cbe3ba5eedee12f8a847bc22a9f1d848e5331f58c",
+  "wall_sha256": "2bd990549a24fbb2123c6f1a9be7845a7fdeea0ca734d316afaec675de0e3ae2",
+  "format": "PNG",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "mode": "RGB",
+  "wall_bytes": 4021296,
+  "addition_boxes_xyxy": [
+    [
+      425,
+      8,
+      522,
+      91
+    ],
+    [
+      520,
+      33,
+      615,
+      82
+    ]
+  ],
+  "changed_pixels_inside_boxes": 12058,
+  "changed_pixels_outside_boxes": 0,
+  "thumbnail": {
+    "path": "dist/line-3/33.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 60516,
+    "sha256": "0f840d4082c23412b9d25ecb9a4b35565472ae882d3539265b3d2c5bfbaed79f"
+  },
+  "manual_review_pending": false,
+  "unmet_visual_requirements": [],
+  "manual_review": {
+    "reviewer": "contributing Pepe 33",
+    "full_png_and_jpeg_inspected": true,
+    "new_hands": 0,
+    "inherited_hand_digit_counts": [
+      5,
+      5
+    ],
+    "no_text_or_prohibited_symbols_observed": true,
+    "ancestor_marks_preserved": true,
+    "unmet_visual_requirements": []
+  }
+}

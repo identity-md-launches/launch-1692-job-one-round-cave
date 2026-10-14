@@ -1,0 +1,90 @@
+{
+  "all_passed": true,
+  "tests": 255,
+  "checks": [
+    {
+      "command": "/usr/bin/python3 -B -m unittest discover -s line-3/tools/code-ancestry -p test_*.py",
+      "exit_code": 0,
+      "tests": 23,
+      "output": ".......................\n----------------------------------------------------------------------\nRan 23 tests in 3.933s\n\nOK\n"
+    },
+    {
+      "command": "/usr/bin/python3 -B -m unittest discover -s line-3/tools/code-calls -p test_*.py",
+      "exit_code": 0,
+      "tests": 24,
+      "output": "........................\n----------------------------------------------------------------------\nRan 24 tests in 1.480s\n\nOK\n"
+    },
+    {
+      "command": "/usr/bin/python3 -B -m unittest discover -s line-3/tools/code-changes -p test_*.py",
+      "exit_code": 0,
+      "tests": 10,
+      "output": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.102s\n\nOK\n"
+    },
+    {
+      "command": "/usr/bin/python3 -B -m unittest discover -s line-3/tools/code-constants -p test_*.py",
+      "exit_code": 0,
+      "tests": 16,
+      "output": "................\n----------------------------------------------------------------------\nRan 16 tests in 1.189s\n\nOK\n"
+    },
+    {
+      "command": "/usr/bin/python3 -B -m unittest discover -s line-3/tools/code-delta -p test_*.py",
+      "exit_code": 0,
+      "tests": 21,
+      "output": ".....................\n----------------------------------------------------------------------\nRan 21 tests in 3.077s\n\nOK\n"
+    },
+    {
+      "command": "/usr/bin/python3 -B -m unittest discover -s line-3/tools/code-lens -p test_*.py",
+      "exit_code": 0,
+      "tests": 16,
+      "output": "................\n----------------------------------------------------------------------\nRan 16 tests in 0.290s\n\nOK\n"
+    },
+    {
+      "command": "/usr/bin/python3 -B -m unittest discover -s line-3/tools/code-metadata -p test_*.py",
+      "exit_code": 0,
+      "tests": 23,
+      "output": ".......................\n----------------------------------------------------------------------\nRan 23 tests in 3.641s\n\nOK\n"
+    },
+    {
+      "command": "/usr/bin/python3 -B -m unittest discover -s line-3/tools/code-opcodes -p test_*.py",
+      "exit_code": 0,
+      "tests": 6,
+      "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.200s\n\nOK\n"
+    },
+    {
+      "command": "/usr/bin/python3 -B -m unittest discover -s line-3/tools/code-proof -p test_*.py",
+      "exit_code": 0,
+      "tests": 30,
+      "output": "..............................\n----------------------------------------------------------------------\nRan 30 tests in 1.712s\n\nOK\n"
+    },
+    {
+      "command": "/usr/bin/python3 -B -m unittest discover -s line-3/tools/code-review -p test_*.py",
+      "exit_code": 0,
+      "tests": 19,
+      "output": "...................\n----------------------------------------------------------------------\nRan 19 tests in 2.123s\n\nOK\n"
+    },
+    {
+      "command": "/usr/bin/python3 -B -m unittest discover -s line-3/tools/code-routes -p test_*.py",
+      "exit_code": 0,
+      "tests": 25,
+      "output": ".........................\n----------------------------------------------------------------------\nRan 25 tests in 1.420s\n\nOK\n"
+    },
+    {
+      "command": "/usr/bin/python3 -B -m unittest discover -s line-3/tools/code-set -p test_*.py",
+      "exit_code": 0,
+      "tests": 17,
+      "output": ".................\n----------------------------------------------------------------------\nRan 17 tests in 5.221s\n\nOK\n"
+    },
+    {
+      "command": "/usr/bin/python3 -B -m unittest discover -s line-3/tools/code-surface -p test_*.py",
+      "exit_code": 0,
+      "tests": 25,
+      "output": ".........................\n----------------------------------------------------------------------\nRan 25 tests in 2.023s\n\nOK\n"
+    },
+    {
+      "command": "python3 -B line-3/tools/code-calls/demo.py",
+      "exit_code": 0,
+      "demonstration_passed": true
+    }
+  ],
+  "scope": "Local contributor checks, not independent certification."
+}
