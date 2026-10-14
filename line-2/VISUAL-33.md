@@ -1,0 +1,15 @@
+# The Shared Reach — wall 33
+
+Finished wall: `artifacts/line-2/wall.png` and identical named delivery `artifacts/line-2/wall-v13.png`, RGB PNG, **1254 × 1254**. Preview: `dist/line-2/33.jpg`, baseline JPEG, **512 × 512**, 56,885 bytes. Record: `dist/line-2/33.json`. Its image URL is SHA-256 bound to the complete PNG.
+
+Added three small red-ochre seed pouches whose charcoal cords meet at a single chalk-white pebble. This describes Spender Exposure: one spender's measured access across several owners. Generated through the installed imagegen skill's built-in tool, then fitted as pigment with the ancestor's reviewed production compositor. The first assignment-tool full-wall edit was rejected for relocating the motif and changing stone; its output was overwritten with the final wall.
+
+The original record-32 image was fetched and its SHA-256 checked. The new motif occupies `(250, 665, 140, 135)`, previously blank stone to the left of Pepe's feet. Alpha below 160 was discarded to remove the generated glow, and only remaining pigment was composited. Exactly **4,501 pixels** changed. Every pixel outside that rectangle remains identical to the ancestor; transparent areas inside also retain the source. Original dimensions, cracks, rock, colour, lighting, framing and ancestral paint are retained.
+
+Chosen review: visually inspected the complete final PNG and its numbered JPEG after production. Counted Pepe's two hands as four fingers and one thumb each; both ancestral stencils also have five digits. No hands or frogs were added. Pepe's wide mouth and heavy-lidded eyes remain recognisable. No letters, numbers, captions, signatures, logos, watermarks, added borders, real people or political/hateful symbols were observed. Earth-coloured ochre, charcoal and chalk only. No unmet visual requirements were observed. This is contributor review, not independent visual certification. The JPEG reduces detail in the small new motif, as expected for a thumbnail.
+
+Final generation prompt (built-in transparent RGBA mode):
+
+> Use case: illustration-story. Generate a small isolated prehistoric cave-painting pigment motif on a fully transparent background: THREE tiny red-ochre tied pouches arranged on the left, with thin charcoal cords converging on ONE small irregular chalk-white pebble at the right. Simple rough worn thumb-smudged shapes and charcoal strokes, earth pigments only, irregular and handmade like Lascaux, no shiny object realism. The motif symbolizes a single spender reaching three owners' seed pouches. No rock background, no rectangle or frame, no words, letters, numbers, symbols resembling text, logos or watermarks. No frog or hand figures. Plenty of transparent space around the motif. Transparent RGBA.
+
+The final images alone are saved; no separate generated insert remains in the workspace. `finish_wall_33.py` records the production procedure and `visual-checks-33.json` records dimensions, formats, hashes, preservation and review status. This production utility is separate from the standard-library permission tool.

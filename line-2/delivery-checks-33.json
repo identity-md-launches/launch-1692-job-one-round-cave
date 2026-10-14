@@ -1,0 +1,18 @@
+{
+  "goal_byte_unchanged": true,
+  "older_records_unchanged": true,
+  "record_count": 33,
+  "record_schema_checked": true,
+  "wall_png_dimensions": [
+    1254,
+    1254
+  ],
+  "wall_outputs_identical": true,
+  "artifact_hash_matches": true,
+  "artifact_outputs_untracked": true,
+  "new_files_within_scope": true,
+  "new_non_artifact_files_under_100KB": true,
+  "tests_passed": 174,
+  "visual_checks": "visual-checks-33.json",
+  "unmet_visual_requirements": []
+}

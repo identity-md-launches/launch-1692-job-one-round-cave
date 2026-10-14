@@ -1,0 +1,35 @@
+{
+  "source_sha256": "b344024425efb8cadb4776d494c12bd22e0b3c4b5dcf43eb6745696087238448",
+  "output_sha256": "fb99b259b4b550aa302e44197eaa644caf82e903c7d2311d3e94c548bce11bf4",
+  "format": "PNG",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "placement": [
+    250,
+    665,
+    140,
+    135
+  ],
+  "changed_pixels": 4501,
+  "outside_placement_unchanged": true,
+  "insert_alpha_bounds": [
+    299,
+    149,
+    1202,
+    873
+  ],
+  "preview": {
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 56885
+  },
+  "unmet_visual_requirements": [],
+  "visual_review": "Inspected complete final PNG and JPEG; five digits per ancestral hand and stencil; no unmet requirements observed",
+  "five_digits_per_hand_reviewed": true,
+  "ancestral_marks_preserved": true
+}

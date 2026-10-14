@@ -1,0 +1,30 @@
+{
+  "name": "The Shared Reach",
+  "image": "https://api.imd.fun/artifacts/fb99b259b4b550aa302e44197eaa644caf82e903c7d2311d3e94c548bce11bf4",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Moss"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 2"
+    },
+    {
+      "trait_type": "Number",
+      "value": 33
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Spender Exposure"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Three pouch cords converge on one pale pebble."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "ERC-20 spending-permission audits"
+    }
+  ]
+}
